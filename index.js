@@ -47,8 +47,7 @@ const request = async () => { // Calling a "synchronous" fetch
                     "\n \n __**:cityscape: City:**__ \n" 
                     + city + 
                     "\n \n__**:round_pushpin: Location:**__ \n" 
-                    + "**Longitude:** " + lon + "\n"
-                    + "**Latitude:** ```" + lat
+
     }
 
     postRequest.send(JSON.stringify(params));
